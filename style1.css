@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #303952, #3498db);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .card {
+    background: #1e272e;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    animation: logoAnimation 1.1s ease-in-out forwards, logoMoveTop 1.1s ease-in-out 1.1s forwards;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    transform-origin: center center;
+  }
+  
+  /* Add other styles as before */
+  
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background: #485460; /* Dark gray background for input */
+    color: #ecf0f1;
+  }
+  input:focus {
+    background: #5d6d7e; /* Slightly lighter gray on focus */
+  }
+  .placeholder-style {
+    color: #777;
+    font-style: italic;
+  }
+  
+  input[type=submit] {
+    background: #f81c03;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background: #c0392b; /* Darker red on hover */
+  }
+  @keyframes logoAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Adjust the final scale as needed */
+      opacity: 1;
+    }
+  }
+  
+  @keyframes logoMoveTop {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      transform: translate(-50%, -220%) scale(1.5); /* Adjust the final translation as needed */
+    }
+  }
