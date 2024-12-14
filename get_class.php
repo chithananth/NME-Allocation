@@ -1,5 +1,5 @@
 <?php
-include('con.php');
+include('con1.php');
 header('Content-Type: application/json'); // Set the content type to JSON
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['departmentId'])) {

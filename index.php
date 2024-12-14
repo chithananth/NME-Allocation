@@ -1,5 +1,5 @@
 <?php
-include ('con.php');
+include ('con1.php');
 session_start();
 if (isset($_SESSION['loggedin'])) {
 	header('Location: Dashboard.php');

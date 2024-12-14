@@ -1,5 +1,5 @@
 <?php
-include ('con.php'); // Include your database connection script
+include ('con1.php'); // Include your database connection script
 
 // Hash the new password
 $new_password = password_hash('Vhnsnc@123', PASSWORD_DEFAULT);

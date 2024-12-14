@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('con.php');
+include ('con1.php');
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;

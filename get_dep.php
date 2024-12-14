@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('con.php');
+include ('con1.php');
 ?>
 <!DOCTYPE html>
 <html>
